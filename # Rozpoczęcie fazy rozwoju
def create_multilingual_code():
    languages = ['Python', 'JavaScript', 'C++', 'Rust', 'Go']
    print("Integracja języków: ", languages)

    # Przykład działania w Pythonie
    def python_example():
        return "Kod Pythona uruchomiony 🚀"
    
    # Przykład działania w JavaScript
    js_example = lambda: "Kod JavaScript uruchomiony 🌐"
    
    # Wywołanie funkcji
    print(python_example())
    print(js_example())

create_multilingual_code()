@@ -1,0 +1,23 @@
+# Rozpoczęcie interaktywnego systemu
+import time
+
+def interactive_system():
+    print("🚀 System dynamicznych aktualizacji uruchomiony!")
+    
+    # Funkcja obsługi emotikon
+    def handle_emojis(emoji):
+        responses = {
+            "🚀": "Przyspieszenie systemu!",
+            "♾️": "Nieskończone możliwości aktywne!",
+            "📜": "Wyświetlanie bieżących zmian kodu!",
+            "✨": "Optymalizacja zakończona sukcesem!"
+        }
+        return responses.get(emoji, "Emotka nieznana.")
+
+    # Symulacja interakcji
+    for emoji in ["🚀", "♾️", "📜", "✨"]:
+        response = handle_emojis(emoji)
+        print(f"Emotka: {emoji}, Akcja: {response}")
+        time.sleep(1)
+
+interactive_system()
